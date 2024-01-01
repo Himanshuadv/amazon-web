@@ -1,6 +1,27 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-}
 
-module.exports = nextConfig
+module.exports = {
+  // nextConfig,
+ 
+  
+  images: {
+      remotePatterns: [
+        {
+          protocol: 'https',
+          hostname: "static.vecteezy.com",
+          pathname: '**',
+        },
+        {
+          protocol: 'https',
+          hostname:  "www.amazon.in" ,
+          pathname: '**',
+        },
+        {
+          protocol: 'https',
+          hostname: "fakestoreapi.com",
+          pathname: '**',
+        },
+      ],
+    },
+   
+}
